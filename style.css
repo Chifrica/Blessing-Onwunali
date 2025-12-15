@@ -268,6 +268,48 @@ section { padding: var(--section-padding) 0; }
 .achievements-list { list-style: none; padding: 0; margin: 0; }
 .achievements-list li { margin-bottom: .8rem; }
 
+/* Add to the end of your style.css */
+
+/* Styling for Badge Embeds */
+.achievements h3 { 
+    margin-top: 2.5rem; 
+    margin-bottom: 1rem;
+    color: var(--text);
+    border-top: 1px solid #3a3a3a;
+    padding-top: 1rem;
+}
+
+.badge-embed-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: flex-start;
+}
+.coursera-badge-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 150px;
+    text-align: center;
+}
+.coursera-badge-container a {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+/* Ensure the single existing credly badge is styled */
+.badge-embed {
+    max-width: 150px;
+    margin-top: 1rem;
+}
+
+/* Responsive adjustment for badges */
+@media (max-width: 600px) {
+    .badge-embed-grid {
+        justify-content: center;
+    }
+}
+
 /* Contact + Footer */
 .contact p { color: var(--muted); }
 .site-footer { 
